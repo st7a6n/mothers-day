@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bonne fête des mères</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="entry" aria-label="Entrée de la galerie">
+        <img class="entry__cover" src="assets/cover-photo.jpg" alt="Maman devant la tour Eiffel à Paris" />
+        <div class="entry__inner">
+          <p class="entry__kicker">A Mother's Day Gallery:</p>
+          <h1>Bonne fête des mères,<br />je t'aime maman</h1>
+          <div class="music-panel" aria-label="Entrée de la galerie">
+            <button id="enterButton" type="button">Enter the gallery.</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="music-bar" aria-live="polite">
+        <button id="playPauseButton" type="button" aria-label="Lecture ou pause">Play</button>
+        <span id="trackName">Rachmaninoff - Variation 18</span>
+        <input id="volumeControl" type="range" min="0" max="1" step="0.01" value="0.65" aria-label="Volume" />
+      </div>
+
+      <audio id="backgroundMusic" src="assets/background-music.mp3" loop autoplay preload="auto"></audio>
+
+      <section class="gallery-section" aria-label="Galerie de photos">
+        <header class="section-heading">
+          <p class="section-heading__question">你还记得我们一起去过哪里吗？</p>
+          <h2>scroll down for a secret message.</h2>
+        </header>
+
+        <div class="collage" id="collage">
+          <figure class="photo photo--hero tilt-left"><img src="assets/gallery/000081320027.jpg" alt="Maman devant la tour Eiffel à Paris" /></figure>
+          <figure class="photo photo--portrait tilt-right"><img src="assets/gallery/000081310027.jpg" alt="Souvenir familial" /></figure>
+          <figure class="photo photo--landscape tilt-soft"><img src="assets/gallery/000059120033.jpg" alt="Souvenir familial" /></figure>
+          <figure class="photo photo--portrait tilt-left"><img src="assets/gallery/000059120019.jpg" alt="Souvenir familial" /></figure>
+          <figure class="photo photo--landscape tilt-soft"><img src="assets/gallery/000059120024.jpg" alt="Temple au bord de l'eau" /></figure>
+          <figure class="photo photo--small tilt-right"><img src="assets/gallery/000059120035.jpg" alt="Souvenir familial" /></figure>
+          <figure class="photo photo--portrait tilt-soft"><img src="assets/gallery/000059120021.jpg" alt="Souvenir familial" /></figure>
+          <figure class="photo photo--landscape tilt-left"><img src="assets/gallery/000059120022.jpg" alt="Souvenir familial" /></figure>
+          <figure class="photo photo--small tilt-right"><img src="assets/gallery/000059120036.jpg" alt="Souvenir familial" /></figure>
+          <figure class="photo photo--portrait tilt-soft"><img src="assets/gallery/000059120023.jpg" alt="Souvenir familial" /></figure>
+          <figure class="photo photo--landscape tilt-left"><img src="assets/gallery/000081320030.jpg" alt="Souvenir familial" /></figure>
+          <figure class="photo photo--portrait tilt-right"><img src="assets/gallery/000081320019.jpg" alt="Souvenir familial" /></figure>
+          <figure class="photo photo--small tilt-soft"><img src="assets/gallery/000081320025.jpg" alt="Souvenir familial" /></figure>
+          <figure class="photo photo--portrait tilt-left"><img src="assets/gallery/000081320026.jpg" alt="Souvenir familial" /></figure>
+          <figure class="photo photo--landscape tilt-right"><img src="assets/gallery/000081320022.jpg" alt="Souvenir familial" /></figure>
+          <figure class="photo photo--small tilt-soft"><img src="assets/gallery/000081320023.jpg" alt="Souvenir familial" /></figure>
+          <figure class="photo photo--portrait tilt-left"><img src="assets/gallery/000006520015.jpg" alt="Souvenir familial" /></figure>
+          <figure class="photo photo--landscape tilt-right"><img src="assets/gallery/000006520004.jpg" alt="Souvenir familial" /></figure>
+          <figure class="photo photo--landscape tilt-left"><img src="assets/gallery/000006520002.jpg" alt="Vue sur la mer et les collines" /></figure>
+          <figure class="photo photo--portrait tilt-soft"><img src="assets/gallery/000081320017.jpg" alt="Souvenir familial" /></figure>
+          <figure class="photo photo--small tilt-left"><img src="assets/gallery/000006520007.jpg" alt="Souvenir familial" /></figure>
+          <figure class="photo photo--landscape tilt-right"><img src="assets/gallery/000006520017.jpg" alt="Ruines dans le desert" /></figure>
+          <figure class="photo photo--landscape tilt-soft"><img src="assets/gallery/000006520021.jpg" alt="Ruines et montagnes du desert" /></figure>
+          <figure class="photo photo--portrait tilt-right"><img src="assets/gallery/000081310014.jpg" alt="Souvenir familial" /></figure>
+          <figure class="photo photo--portrait tilt-left"><img src="assets/gallery/IMG_0963.png" alt="Souvenir familial" /></figure>
+          <figure class="photo photo--portrait tilt-right"><img src="assets/gallery/IMG_9433.png" alt="Souvenir familial" /></figure>
+          <figure class="photo photo--landscape tilt-soft"><img src="assets/gallery/000059120029.jpg" alt="Souvenir familial" /></figure>
+        </div>
+      </section>
+
+      <section class="letter-scroll" id="letterSection" aria-label="Lettre finale">
+        <div class="letter-stage">
+          <div class="envelope" id="envelope">
+            <div class="envelope__back"></div>
+            <div class="letter-card">
+              <p class="letter-card__date">Dear Mom,</p>
+              <p>
+                Growing up I always heard you talking about a "third power" in your parenting.
+                This year, that power has manifested in all the wonderful journeys we have gone on,
+                both around the world, and in our minds and souls. Through each city, we enter a new
+                conversation with time, space, and the moments that give us meaning.
+              </p>
+              <p>
+                Of course, your love has always made me feel endless security, in all our years together.
+                And yet, something I've been reflecting on recently is if there's also a "third kind of
+                security" in your love that makes it so special. An intellectual safety, a mental harbour,
+                a lighthouse for our thoughts. A security of always being understood, of knowing that one
+                <u>can be understood</u>; that no matter what kind of absurdity one may throw out from the
+                blackbox of consciousness, they will be understood. That is a kind of embrace warmer than
+                any hug, a shield stronger than any else; and in that, you are the most fearless person I know.
+              </p>
+              <p>
+                Through you, I have learned how to love, and as I learn to embrace myself, I know that love
+                can overflow, and go back towards you and many more in need. Thank you for making the world a
+                less lonely place. Now as the greatest gift I can give, I can go forward and make this world
+                less lonely for others too, just like you have always done for me, and countless other children
+                of the world.
+              </p>
+              <p>I love you, from here to eternity, to the end of space and time.</p>
+              <p class="signature">Sean Tan</p>
+            </div>
+            <div class="envelope__front"></div>
+            <div class="envelope__flap"></div>
+            <button class="open-envelope" id="openEnvelopeButton" type="button" aria-controls="envelope">点我打开！</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
